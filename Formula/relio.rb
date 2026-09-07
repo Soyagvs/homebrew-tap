@@ -5,21 +5,21 @@
 class Relio < Formula
   desc "turn commits into releases"
   homepage "https://github.com/soyagvs/relio"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Soyagvs/relio/releases/download/v1.1.0/relio_1.1.0_darwin_amd64.tar.gz"
-      sha256 "399ccba2a5df73abf09ebf9724eb6eddd8eef17820996fcaf238f20ee46b7840"
+      url "https://github.com/Soyagvs/relio/releases/download/v1.1.1/relio_1.1.1_darwin_amd64.tar.gz"
+      sha256 "a237b27394ec64542c7c8f7386a803eb157bbc677c654686fb40b30e0d8fbf27"
 
       define_method(:install) do
         bin.install "relio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Soyagvs/relio/releases/download/v1.1.0/relio_1.1.0_darwin_arm64.tar.gz"
-      sha256 "619ae429a970228a1a548bd0ac3c10afcc80656196a90b6e60471bcdd43322b8"
+      url "https://github.com/Soyagvs/relio/releases/download/v1.1.1/relio_1.1.1_darwin_arm64.tar.gz"
+      sha256 "ee3b546852b0b6d17b385cd280f62ece0a3647b9cc9bf659990a7b78c39c6b5d"
 
       define_method(:install) do
         bin.install "relio"
@@ -29,15 +29,15 @@ class Relio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soyagvs/relio/releases/download/v1.1.0/relio_1.1.0_linux_amd64.tar.gz"
-      sha256 "bee225d025d0896908cd396d779dbec2ad9a3b7c160602134fd4bde686f8e902"
+      url "https://github.com/Soyagvs/relio/releases/download/v1.1.1/relio_1.1.1_linux_amd64.tar.gz"
+      sha256 "72b7deabbbf61b11885fa64842eaca0e37b9fea83da0a93a06e6e86401d4d746"
       define_method(:install) do
         bin.install "relio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soyagvs/relio/releases/download/v1.1.0/relio_1.1.0_linux_arm64.tar.gz"
-      sha256 "4669a64602703778d7607015a6e6a090f98063bc2f9a30c272f9fd6cd0b27388"
+      url "https://github.com/Soyagvs/relio/releases/download/v1.1.1/relio_1.1.1_linux_arm64.tar.gz"
+      sha256 "25c72f19c98e4e93a80257b51660a3b6be81fd7c791e866216393087f44f2d41"
       define_method(:install) do
         bin.install "relio"
       end
