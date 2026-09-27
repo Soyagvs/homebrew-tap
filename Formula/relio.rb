@@ -5,21 +5,21 @@
 class Relio < Formula
   desc "turn commits into releases"
   homepage "https://github.com/soyagvs/relio"
-  version "1.12.0"
+  version "1.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Soyagvs/relio/releases/download/v1.12.0/relio_1.12.0_darwin_amd64.tar.gz"
-      sha256 "993552997c7d2d1ca54b3145afc8c5cbe55b2a0eba20fe85502c01383b992825"
+      url "https://github.com/Soyagvs/relio/releases/download/v1.13.0/relio_1.13.0_darwin_amd64.tar.gz"
+      sha256 "5ea8f53deedcfd82f7d93f670030ff8b6e8bbf916fe57ab8fc8a582dae810ed3"
 
       define_method(:install) do
         bin.install "relio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Soyagvs/relio/releases/download/v1.12.0/relio_1.12.0_darwin_arm64.tar.gz"
-      sha256 "a545c903fd40415295cea804733795eda35409f5365e39f2a2eaf5031495f199"
+      url "https://github.com/Soyagvs/relio/releases/download/v1.13.0/relio_1.13.0_darwin_arm64.tar.gz"
+      sha256 "349d86e3fe2fa97c9b9ca8771fd2f9d9a673d1715d0c76e0fb72458d765bcac3"
 
       define_method(:install) do
         bin.install "relio"
@@ -29,15 +29,15 @@ class Relio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soyagvs/relio/releases/download/v1.12.0/relio_1.12.0_linux_amd64.tar.gz"
-      sha256 "f8bf8fa2b4fcd2a4bdb7e25820f96876e0ee03fdd35f3fe1f87bee65c1732bf5"
+      url "https://github.com/Soyagvs/relio/releases/download/v1.13.0/relio_1.13.0_linux_amd64.tar.gz"
+      sha256 "d3f287176aa43ac4bbdf1c4fe29b8e4c09f6bbb8017a4220d0aa087d1ccf000e"
       define_method(:install) do
         bin.install "relio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soyagvs/relio/releases/download/v1.12.0/relio_1.12.0_linux_arm64.tar.gz"
-      sha256 "5376f07aa3c24ca865b60d3ee99b47879ddfb2a6321d301cf638dd3c95ce761a"
+      url "https://github.com/Soyagvs/relio/releases/download/v1.13.0/relio_1.13.0_linux_arm64.tar.gz"
+      sha256 "528f413cf02f89c1439dd8a46da2a4d931cf2fa0f43bd37f8a1bc134a010d3ca"
       define_method(:install) do
         bin.install "relio"
       end
